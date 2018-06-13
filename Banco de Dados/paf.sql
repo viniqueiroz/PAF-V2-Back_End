@@ -168,19 +168,19 @@ CREATE TABLE `registro_operacional` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `statusUsuario`
+-- Estrutura da tabela `statususuario`
 --
 
-CREATE TABLE `statusUsuario` (
+CREATE TABLE `statususuario` (
   `id` int(11) NOT NULL,
   `nomeStatus` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `statusUsuario`
+-- Extraindo dados da tabela `statususuario`
 --
 
-INSERT INTO `statusUsuario` (`id`, `nomeStatus`) VALUES
+INSERT INTO `statususuario` (`id`, `nomeStatus`) VALUES
 (2, 'PENDENTE'),
 (3, 'EM OPERAÇÃO'),
 (4, 'CONCLUSO'),
@@ -299,9 +299,9 @@ ALTER TABLE `registro_operacional`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `statusUsuario`
+-- Indexes for table `statususuario`
 --
-ALTER TABLE `statusUsuario`
+ALTER TABLE `statususuario`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -378,9 +378,9 @@ ALTER TABLE `registro_operacional`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `statusUsuario`
+-- AUTO_INCREMENT for table `statususuario`
 --
-ALTER TABLE `statusUsuario`
+ALTER TABLE `statususuario`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --

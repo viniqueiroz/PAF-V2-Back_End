@@ -191,7 +191,7 @@ app.post('/cadastrarStatus', function(req, res) {  /// Cadastra um novo status
 
 app.put('/editarStatus/:status_id', function(req, res) { /// Edita um status a partir de seus dados
   status = new dbfun.Status(); /// Conexão com o banco
-  status.query("UPDATE statusUsuario SET nomeStatus='" + req.body.nomeStatus + "' WHERE id=" + req.params.status_id + ";",  /// Atualiza os dados com a query do banco a patir do id
+  status.query("UPDATE statususuario SET nomeStatus='" + req.body.nomeStatus + "' WHERE id=" + req.params.status_id + ";",  /// Atualiza os dados com a query do banco a patir do id
   function(err) { // Caso ocorra um erro
     if(err)
     res.send(err);

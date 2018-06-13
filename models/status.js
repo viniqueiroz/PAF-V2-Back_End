@@ -2,7 +2,7 @@ var bookshelf = require('../bookshelf');
 
 
 var Status = bookshelf.Model.extend({
-  tableName: 'statusUsuario'
+  tableName: 'statususuario'
 });
 
 module.exports = Status;
