@@ -10,11 +10,11 @@ const mysqlModel = require('mysql-model');
 
 // Conexão com o banco de dados
 const connection = mysqlModel.createConnection({
-  host: '127.0.0.1',
-  user: 'paf',
-  password:'masterOfPuppets',
+  host: 'g3v9lgqa8h5nq05o.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	',
+  user: 'qvr8lghvkmqfytjb',
+  password:'ebm6wzykl2s984nd',
   connectionLimit: 1,
-  database: 'paf'
+  database: 'yilejdouiizdqh2z'
 });
 
 
