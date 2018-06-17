@@ -6,6 +6,7 @@ const express = require('express');
 const app = express();
 var http = require("http");
 var session = require('cookie-session');
+var cors = require('cors');
 //Usado para manipulação do Body.
 const bodyParser = require('body-parser')
 const routes = require('./routes');
@@ -46,7 +47,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-
+app.use(cors);
 //Pasta utilizada para o frontEnd vai ser a pasta public
 app.use('/', express.static(__dirname + '/public'));
 
