@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
   extended: true
 }));
-
+app.options('*', cors());
 app.use(session({
   secret: 'keyboard cat',
   resave: false,
