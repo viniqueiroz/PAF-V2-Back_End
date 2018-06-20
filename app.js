@@ -2,6 +2,7 @@
 
 
 //Express é a framework utilizado para o Back-End.
+const cors = require('cors');
 const express = require('express');
 const app = express();
 var session = require('cookie-session');
@@ -13,7 +14,8 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
   extended: true
 }));
-
+app.use(cors());
+app.options('*', cors());
 app.use(session({
   secret: 'keyboard cat',
   resave: false,
