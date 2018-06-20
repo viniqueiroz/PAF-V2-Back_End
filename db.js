@@ -11,8 +11,8 @@ const mysqlModel = require('mysql-model');
 // Conexão com o banco de dados
 const connection = mysqlModel.createConnection({
   host: '127.0.0.1',
-  user: 'root',
-  password:'',
+  user: 'paf',
+  password:'pafBackEndV2',
   connectionLimit: 1,
   database: 'paf'
 });
