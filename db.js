@@ -77,7 +77,7 @@ module.exports = {
     tableName: "unidadeMed"
   }),
   Status: connection.extend({                   // Verificar, o banco ainda não possui a tabela
-    tableName: "statusUsuario"
+    tableName: "status_usuario"
   }),
 
   
